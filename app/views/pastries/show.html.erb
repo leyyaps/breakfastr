@@ -1,2 +1,4 @@
 <h1><%= @pastry.name %></h1>
 <p><%= @pastry.price_in_pence %></p>
+<%= link_to "Remove this pastry from the bakery",
+ pastry_path(@pastry), method: :delete %>
