@@ -1,7 +1,14 @@
 <h1>Latest pastries hot out the oven!</h1>
 <p>Sexy pastries from our sexy bakers</p>
-<% @pastries.each do |pastry| %>
-	<p><%= pastry[:name] %></p>
-	<p><%= pastry[:price_in_pence] %></p>
+<section class="pastries">
+	<% @pastries.each do |pastry| %>
+		<div class="pastry">
+			<p><%= pastry[:name] %></p>
+			<p><%= pastry[:price_in_pence] %></p>
+		</div>
 
-<% end %>
+
+	<% end %>
+</section>
+
+
