@@ -13,6 +13,14 @@ class PastriesController < ApplicationController
   end
 
   def show
+  	@pastry = {
+  		name: "Croissant",
+  		price_in_pence: 350,
+  		description: "A delicious rich, crescent-shaped roll of leavened dough or puff pastry"
+  		}
+
+
+  	
   end
 
   def view
